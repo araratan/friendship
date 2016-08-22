@@ -11,6 +11,13 @@ gem 'sdoc',               '~> 0.4.0', group: :doc
 gem 'turbolinks'
 gem 'uglifier',           '>= 1.3.0'
 
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'remotipart', '~> 1.2'
+
+gem 'bootstrap-sass'
+gem "paperclip", "~> 4.2"
+
 group :development, :test do
   gem 'byebug'
 end
