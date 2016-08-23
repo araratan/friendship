@@ -1,0 +1,21 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+      <ul>
+        <% @post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_area :content, placeholder: "What is in you mind . . . ." %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <div id="photos"></div>
+<% end %>

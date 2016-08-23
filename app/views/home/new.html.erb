@@ -1,0 +1,8 @@
+<%= render 'form' %>
+
+Post
+
+<% @posts.each do |post| %>
+  <%= post.user_id %>
+  <%= post.content %>
+<% end %>
